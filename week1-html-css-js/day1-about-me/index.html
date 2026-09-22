@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Me</title>
+  <style>
+    body {
+        padding: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        background-color: lightgrey;
+    }
+    .hide {
+        display: none;
+    }
+
+  </style>
+
+</head>
+<body>
+  <h1>C Siva Prasad</h1>
+  <p>I've been working at smartaapp.com for the past 8 years, involved in different modules including Project, Safety, and Finance.</p>
+
+  <h2>Skills</h2>
+  <ul class="list">
+    <li>ReactJS</li>
+    <li>NextJs</li>
+    <li>NodeJS</li>
+  </ul>
+  <button id="toggleBtn">Toggle Skills</button>
+    <script>
+    const button = document.querySelector("#toggleBtn");
+    const skillsList = document.querySelector("ul");
+    console.log(skillsList);
+    button.addEventListener('click',function(){
+        skillsList.classList.toggle('hide');
+        // if(skillsList.style.display === 'none'){
+        //     skillsList.style.display ='block';
+        // } else {
+        //     skillsList.style.display ='none';
+        // }
+    });
+  </script>
+</body>
+</html>
